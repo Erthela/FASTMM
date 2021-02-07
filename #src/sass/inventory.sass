@@ -1,0 +1,172 @@
+main.inventory
+  background-color: #121413
+  width: 100vw
+  .menu
+    margin: auto
+    width: 51px
+    z-index: 2
+    position: relative
+    left: 0
+    top: -.5rem
+    animation: show_menu 1.5s
+    @keyframes show_menu
+      from
+        top: -6rem
+      to
+        top: -.5rem
+  //выезжающее меню
+  .up-menu
+    display: none
+    position: absolute
+    width: 100vw
+    height: 50vh
+    background: #121413EE
+    right: 0
+    top: 21.25vw
+    z-index: 5
+    .container-fluid .row
+      justify-content: center
+      align-items: center
+      text-align: center
+      .col-lg
+        margin-top: 1rem
+        color: #948E8E
+        font-weight: bold
+        &.button-up
+          width: fit-content
+          box-sizing: border-box
+          position: relative
+          display: inline-block
+          margin: 1rem 0
+          color: #B88D48
+          text-align: center
+          text-decoration: none
+          min-width: 90px
+          height: 2rem
+          line-height: 1.7rem
+
+          &:before, &:after
+            position: absolute
+            content: ''
+            width: 100%
+            left: 0
+            height: 0.93rem
+
+          &:before
+            transform: perspective(14px) rotateX(3deg)
+
+          &:after
+            top: 1rem
+            transform: perspective(14px) rotateX(-3deg)
+
+          &.border-up:before, &.border-up:after
+            border: 2px solid #B88D48
+
+          &.border-up:before
+            border-bottom: none
+
+          &.border-up:after
+            border-top: none
+
+          &.border-up:hover:before, &.border-up:hover:after
+            background: #B88D4840
+
+          &.border-up:hover
+            color: #fff
+
+
+  .trade
+    p
+      color: #948E8E
+      margin: 0 auto
+      font-size: .85em
+      width: calc(100vw - 60px)
+
+    label
+      margin: auto 30px
+      width: calc(100vw - 60px)
+    input
+      background: transparent
+      border-radius: 5px
+      width: 100%
+      padding-left: .65rem
+      padding-right: .65rem
+    a
+      font-size: .85em
+    .default
+      border: 1px solid #948E8E
+      color: #948E8E
+      & ~ a
+        color: #948E8E
+        margin: .5rem auto
+    .incorrect
+      border: 1px solid #AA2727
+      color: #aa2727
+      & ~ a
+        color: #B88D48
+        padding-right: .5rem
+      & ~ button
+        background: transparent
+        border: none
+        &.button-inc
+          font-size: .85em
+          padding-left: .5rem
+          box-sizing: border-box
+          position: relative
+          display: inline-block
+          margin: 1rem 0
+          color: #B88D48
+          text-align: center
+          text-decoration: none
+          min-width: 45px
+          height: 1.5rem
+          line-height: 1.7rem
+
+          &:before, &:after
+            position: absolute
+            content: ''
+            width: 100%
+            left: 0
+            height: 0.93rem
+
+          &:before
+            transform: perspective(5px) rotateX(3deg)
+
+          &:after
+            top: 1rem
+            transform: perspective(5px) rotateX(-3deg)
+
+          &.border-inc:before, &.border-inc:after
+            border: 2px solid #B88D48
+
+          &.border-inc:before
+            border-bottom: none
+
+          &.border-inc:after
+            border-top: none
+
+          &.border-inc:hover:before, &.border-inc:hover:after
+            background: #B88D4840
+
+          &.border-inc:hover
+            color: #fff
+
+          & img
+            padding-left: .25rem
+            width: 1.25rem
+    .correct
+      border: 1px solid #B88D48
+      color: #B88D48
+
+  h3
+    color: #dadada
+    font-size: 1rem
+    padding: .5rem 0
+  img[alt=refresh]
+    float: right
+    margin-top: -2.3rem
+  & > .container > .row
+    border: 1px solid #443F40
+    margin: auto 15px
+  & > .container
+    padding-bottom: 2rem

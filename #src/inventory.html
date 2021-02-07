@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+@@include('_header.html')
+<main class="inventory">
+  <div class="menu">
+    <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M25.9237 0.516145L25.924 0.516145L46.9993 0.502012C48.3803 0.501086 49.5005 1.62017 49.5009 3.00123L49.5053 16.7636C49.5056 17.7656 48.9077 18.6709 47.9861 19.064L48.1822 19.5239L47.9861 19.064L26.8618 28.0739C26.2562 28.3322 25.5732 28.3412 24.9611 28.0989L2.08539 19.0469C1.13196 18.6696 0.50557 17.7484 0.505248 16.7231L0.500945 3.01653C0.500511 1.63549 1.61995 0.515724 3.00099 0.515748L25.9237 0.516145Z" stroke="#B88D48"/>
+    </svg>
+  </div>
+  <div class="up-menu">
+    <div class="container-fluid">
+      <div class="row center">
+        <div class="col-lg">Моя статистика</div>
+        <div class="col-lg">Создать</div>
+        <div class="col-lg">Мои сервера</div>
+        <div class="col-lg button-up border-up">Админка: Создать сервер</div>
+        <div class="col-lg">Админка: Все сервера</div>
+      </div>
+    </div>
+  </div>
+  <div class="trade">
+    <p>Предметы передаются в ручном режиме, трейд с покупкой будет создан в течении 24 часов на ваш аккаунт steam.
+      <b>Ваш инвентарь должен быть открытым.</b></p>
+    <div class="trade-link-stat">
+      <label>
+        <input class="default" type="text" placeholder="Введите трейд линк"><br>
+        <a class="trade-link-tut" href="#">Как получить трейд линк?</a>
+      </label>
+      <label>
+        <input class="incorrect" type="text" placeholder="Введите корректный трейд линк"><br>
+        <a class="trade-link-tut" href="#">Как получить трейд линк?</a>
+        <button class="button-inc border-inc">Добавить</button>
+      </label>
+      <label>
+        <input class="correct" type="text" placeholder="Tрейд линк">
+      </label>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Мой <span class="company">FASTMM</span> инвентарь</h3>
+        <img src="img/refresh.svg" alt="refresh">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="container items-grid">
+          <div class="row">
+            <div class="col">@@include('_inventory_item.html')</div>
+            <div class="col">@@include('_inventory_item.html')</div>
+            <div class="col">@@include('_inventory_item.html')</div>
+            <div class="col">@@include('_inventory_item.html')</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Мой <span class="company">FASTMM</span> инвентарь</h3>
+        <img src="img/refresh.svg" alt="refresh">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="container items-grid">
+          <div class="row">
+            <div class="col">@@include('_inventory_item_sending.html')</div>
+            <div class="col">@@include('_inventory_item_sending.html')</div>
+            <div class="col">@@include('_inventory_item_sending.html')</div>
+            <div class="col">@@include('_inventory_item_sending.html')</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+@@include('_footer.html')
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

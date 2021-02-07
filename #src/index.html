@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Gulp test project</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+@@include('_header.html')
+<main class="main">
+  <div class="head container">
+    <div class="row">
+      <div class="col">
+        <h3>Магазин</h3>
+      </div>
+      <div class="col items">
+        <div>
+          <div class="num">45</div>
+          <div>Вещей</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container fil-search">
+    <div class="row">
+      <div class="col-4 filters">
+        <a href="#" class="button ribbon-outset border-btn">Фильтры<img src="img/fastmm-filters_icons_m.svg" alt="filters_icon"></a>
+      </div>
+      <div class="col search">
+        <div>
+          <label class="search-input border-input">
+            <input type="search" placeholder="Поиск...">
+            <button class="inside-input border-btn">
+              <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.86757 5.23446L1 8M8 3.41985C8 4.7563 6.87663 5.8397 5.49087 5.8397C4.10512 5.8397 2.98175 4.7563 2.98175 3.41985C2.98175 2.0834 4.10512 1 5.49087 1C6.87663 1 8 2.0834 8 3.41985Z" stroke="#B88D48"/>
+              </svg>
+            </button>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col reset-filters">
+        <a href="#">
+          <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.58917L11.4108 2L9.5 3.91083L7.58917 2L7 2.58917L8.91083 4.5L7 6.41042L7.58958 7L9.5 5.08917L11.4112 7L12 6.41125L10.0892 4.5L12 2.58917Z" fill="#FFAB2D"/>
+            <path d="M0.833333 0C0.61232 0 0.400358 0.0877973 0.244078 0.244078C0.0877974 0.400358 3.41833e-08 0.61232 3.41833e-08 0.833333V2.15417C-3.13269e-05 2.26366 0.0215166 2.37209 0.0634121 2.47326C0.105308 2.57442 0.166729 2.66634 0.244167 2.74375L3.33333 5.83333V9.16667C3.33333 9.38768 3.42113 9.59964 3.57741 9.75592C3.73369 9.9122 3.94565 10 4.16667 10H5.83333C6.05435 10 6.26631 9.9122 6.42259 9.75592C6.57887 9.59964 6.66667 9.38768 6.66667 9.16667V8.33333H5.83333V9.16667H4.16667V5.4875L3.9225 5.24375L0.833333 2.15458V0.833333H9.16667V1.66667H10V0.833333C10 0.61232 9.9122 0.400358 9.75592 0.244078C9.59964 0.0877973 9.38768 0 9.16667 0H0.833333Z" fill="#FFAB2D"/>
+          </svg>
+          Сброс фильтров</a>
+      </div>
+    </div>
+  </div>
+  <div class="container items-grid">
+    <div class="row">
+      <div class="col">@@include('_shop_item.html')</div>
+      <div class="col">@@include('_shop_item.html')</div>
+      <div class="col">@@include('_shop_item.html')</div>
+      <div class="col">@@include('_shop_item.html')</div>
+    </div>
+  </div>
+  <div class="pages container">
+    <div class="row">
+      <div class="left-arrow col">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.5416 7.49991H2.50284L5.50269 4.50006L4.79559 3.79297L0.588623 7.99994L4.79559 12.2069L5.50269 11.4998L2.50278 8.49991H15.5416V7.49991Z" fill="#443F40"/>
+        </svg>
+      </div>
+      <div class="col left">
+        <a class="left-btn border-btn" href="#">1</a>
+      </div>
+      <div class="current-page col">
+        <div>   </div>
+      </div>
+      <div class="col right">
+        <a class="right-btn border-btn" href="#">6</a>
+      </div>
+      <div class="right-arrow col">
+        <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 3.52457H13.0798L10.0705 0.672307L10.7798 0L15 4L10.7798 8L10.0705 7.32769L13.0798 4.47537H0V3.52457Z" fill="#DADADA"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</main>
+@@include('_footer.html')
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

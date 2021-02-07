@@ -1,0 +1,110 @@
+@import 'colors'
+
+div.filters-menu
+  font-family: 'Play', sans-serif
+  padding-top: 2rem
+  width: 100vw
+  padding-left: 5vw
+  padding-right: 5vw
+  background-color: #161718
+  height: 100vh
+  .head
+    position: absolute
+    top: 7vw
+    right: 7vw
+  h5
+    color: #DADADA
+  .container
+    place-self: center
+    .row>*
+      font-size: .71rem
+      border: 1px solid #B88D48
+      border-radius: 5px
+      margin: 2px
+      color: #948E8E
+      text-align: center
+      padding: 4px .5rem
+    &.type .row>*
+      //width: fit-content
+    & .row>*:hover
+      background-color: #B88D48
+      color: #1A1B1D
+    &.rarity
+      & .row .legendary
+        border-left: 3px solid $color-legendary
+        &:hover
+          background: transparent
+          color: #fff
+          border: 1px solid #B88D48
+          animation: show-legendary 2s
+          box-shadow: 100vh 0 0 0 $color-legendary inset
+          @keyframes show-legendary
+            from
+              box-shadow: 1vh 0 0 0 $color-legendary inset
+            to
+              box-shadow: 100vh 0 0 0 $color-legendary inset
+      & .row .ancient
+        border-left: 3px solid $color-ancient
+        &:hover
+          background: transparent
+          color: #fff
+          border: 1px solid #B88D48
+          animation: show-ancient 2s
+          box-shadow: 100vh 0 0 0 $color-ancient inset
+          @keyframes show-ancient
+            from
+              box-shadow: 1vh 0 0 0 $color-ancient inset
+            to
+              box-shadow: 100vh 0 0 0 $color-ancient inset
+      & .row .extra
+        border-left: 3px solid $color-exceedingly-rare
+        &:hover
+          background: transparent
+          border: 1px solid #B88D48
+          animation: show-exceedingly-rare 2s
+          box-shadow: 100vh 0 0 0 $color-exceedingly-rare inset
+          @keyframes show-exceedingly-rare
+            from
+              box-shadow: 1vh 0 0 0 $color-exceedingly-rare inset
+            to
+              box-shadow: 100vh 0 0 0 $color-exceedingly-rare inset
+      & .row .rare
+        border-left: 3px solid $color-rare
+        &:hover
+          background: transparent
+          color: #fff
+          border: 1px solid #B88D48
+          animation: show-rare 2s
+          box-shadow: 100vh 0 0 0 $color-rare inset
+          @keyframes show-rare
+            from
+              box-shadow: 1vh 0 0 0 $color-rare inset
+            to
+              box-shadow: 100vh 0 0 0 $color-rare inset
+        padding: 4px 0
+      & .row .mythical
+        border-left: 3px solid $color-mythical
+        &:hover
+          background: transparent
+          border: 1px solid #B88D48
+          color: #fff
+          animation: show-mythical 2s
+          box-shadow: 100vh 0 0 0 $color-mythical inset
+          @keyframes show-mythical
+            from
+              box-shadow: 1vh 0 0 0 $color-mythical inset
+            to
+              box-shadow: 100vh 0 0 0 $color-mythical inset
+        padding: 4px 0
+      & .row .common
+        border-left: 3px solid $color-common
+        &:hover
+          background: transparent
+          border: 1px solid #B88D48
+          animation: show-common 2s
+          box-shadow: 100vh 0 0 0 $color-common inset
+          @keyframes show-common
+            from
+              box-shadow: 1vh 0 0 0 $color-common inset
+            to
+              box-shadow: 100vh 0 0 0 $color-common inset

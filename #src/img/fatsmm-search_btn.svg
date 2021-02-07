@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.57 26">
+    <defs>
+        <style>.cls-1{fill:#1b1b1c;}.cls-1,.cls-2{stroke:#b88d48;}.cls-2{fill:none;}</style>
+    </defs>
+    <title>fatsmm-search_btn</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="cls-1"
+                  d="M5.21,2A2.49,2.49,0,0,1,7.51.5H41.38a2.51,2.51,0,0,1,2.4,1.79L47,13a2.51,2.51,0,0,1,0,1.51l-3.11,9.27a2.5,2.5,0,0,1-2.37,1.71h-34a2.49,2.49,0,0,1-2.25-1.43L.74,14.78a2.5,2.5,0,0,1,0-2Z"/>
+            <path class="cls-2" d="M24.58,14.23,21.71,17m7-4.58A2.51,2.51,0,1,1,26.2,10,2.46,2.46,0,0,1,28.71,12.42Z"/>
+        </g>
+    </g>
+</svg>

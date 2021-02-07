@@ -1,0 +1,159 @@
+
+.transition
+  transition: all 0.25s ease-in-out
+
+.flipIn
+  animation: flipdown 0.5s ease both
+
+.no-select
+  user-select: none
+
+.body
+  width: 85vw
+  min-height: 0
+  display: inline-block
+  position: absolute
+  left: 15vw
+  //margin: auto 10vw
+  background-color: #121413EE
+  max-width: 450px
+  box-sizing: border-box
+  transform: translate(0, 0)
+  color: #948e8e
+  height: 90vh
+  padding-left: 2.5rem
+
+  .dropdown
+    padding-left: 2rem
+
+  a
+    color: #948e8e
+  a:hover
+    color: #948e8e
+
+  h1
+    text-transform: uppercase
+    font-size: 3rem
+    line-height: 4rem
+    letter-spacing: .2rem
+    font-weight: 100
+    @extend .flipIn
+
+  h2
+    font-size: 2rem
+    line-height: 3rem
+    font-weight: 300
+    letter-spacing: 1px
+    display: block
+    background-color: white
+    margin: 0
+    cursor: pointer
+    @extend .no-select
+
+  div
+    font-size: 1.2rem
+    line-height: 2rem
+    letter-spacing: 1px
+    position: relative
+    overflow: hidden
+    max-height: 800px
+    @extend .transition
+    opacity: 1
+    transform: translate(0, 0)
+    margin-top: 0.9rem
+    z-index: 2
+
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+
+    li
+      position: relative
+      margin: 0
+      padding-bottom: .3rem
+      padding-top: 1rem
+      @extend .flipIn
+
+      &:nth-of-type(1)
+        animation-delay: 0.5s
+
+      &:nth-of-type(2)
+        animation-delay: 0.75s
+
+      &:nth-of-type(3)
+        animation-delay: 1.0s
+
+      &:nth-of-type(4)
+        animation-delay: 1.25s
+
+      &:nth-of-type(5)
+        animation-delay: 1.5s
+
+      &:nth-of-type(6)
+        animation-delay: 1.75s
+
+      &:nth-of-type(7)
+        animation-delay: 2.0s
+
+      &:last-of-type
+        padding-bottom: 0
+
+      i
+        position: absolute
+        transform: translate(-6px, 0)
+        margin-top: 1rem
+        right: .5rem
+
+        &:before, &:after
+          content: ""
+          @extend .transition
+          position: absolute
+          background-color: #948e8e
+          width: 3px
+          height: 9px
+
+        &:before
+          transform: translate(-2px, 0) rotate(45deg)
+
+        &:after
+          transform: translate(2px, 0) rotate(-45deg)
+
+      input[type=checkbox]
+        position: absolute
+        cursor: pointer
+        width: 100%
+        height: 100%
+        z-index: 1
+        opacity: 0
+
+        &:checked
+          & ~ div
+            margin-top: 0
+            max-height: 0
+            opacity: 0
+            transform: translate(0, 50%)
+
+          & ~ i
+            &:before
+              transform: translate(2px, 0) rotate(45deg)
+
+            &:after
+              transform: translate(-2px, 0) rotate(-45deg)
+
+  @keyframes flipdown
+    0%
+      opacity: 0
+      transform-origin: top center
+      transform: rotateX(-90deg)
+    5%
+      opacity: 1
+    80%
+      transform: rotateX(8deg)
+    83%
+      transform: rotateX(6deg)
+    92%
+      transform: rotateX(-3deg)
+    100%
+      transform-origin: top center
+      transform: rotateX(0deg)
