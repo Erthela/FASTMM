@@ -10,7 +10,7 @@
 - yarn (желательно)
 
 Чтобы начать работу склонируйте репозиторий:
-$ git clone https://github.com/Erthela/FASTMM.git
+`$ git clone https://github.com/Erthela/FASTMM.git`
 - для перемещения по веткам 
 - - $ git checkout <название ветки>
 - - для того, чтобы установить все зависимости пропишите в консоли в папке нужной ветки
